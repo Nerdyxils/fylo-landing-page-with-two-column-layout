@@ -1,0 +1,271 @@
+@import 'utilities';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+header{
+    background: url(../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    
+    background-size: contain;
+    background-position: bottom;
+
+    // position: absolute;
+    z-index: -100;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+    
+        li {
+            margin: 10px;
+        }
+    
+        .logo {
+            margin: 10px;
+        }
+    }
+}
+
+
+.row {
+    display: flex;
+
+    .col {
+        width: 60%;
+    }
+
+    .main-text {
+        width: 100%;
+        line-height: 1.5;
+        margin: 100px auto;
+
+        button {
+            margin-top: 1em;
+        }
+    }
+
+    .main-img {
+        width: 55%;
+        margin: 100px auto;
+        margin-left: 20px;
+    }
+}
+
+.main-article {
+    background-color: $Light-Grayish-Blue;
+
+    .text-illustrator {
+        line-height: 1.5;
+        width: 100%;
+
+        p {
+            margin-bottom: 1.2em;
+        }
+
+        a {
+            color: $Moderate-Cyan;
+            text-decoration: underline;
+        }
+
+        .testemonials {
+            padding: 2em;
+            margin-top: 1em;
+            background-color: #ffffff;
+
+            .profile {
+                display: flex;
+                align-items: center;
+
+                img {
+                    border-radius: 50%;
+                    width: 50%;
+                }
+
+                .avatar-name {
+                    margin-left: -50px;
+
+                    .name>span{
+                        font-weight: 700;
+                    }
+                }
+            } 
+        }
+    }
+
+    .img-illustrator {
+        margin-left: 20px;
+        width: 80%;
+    }
+}
+
+.first-footer {
+    background-color: $Desaturated-Blue;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+
+    .register-text {
+        width: 90%;
+        line-height: 1.5;
+        p {
+            color: #ffffff;
+            width: 70%;
+        }
+    }
+
+    .register {
+        width: 35%;
+
+        .email-2 {
+            width: 100%;
+            padding: 15px 5px;
+        }
+
+        .btn-2 {
+            padding: 10px 30px;
+            margin-top: 1em;
+        }
+
+    }
+}
+
+footer {
+    background-color: $very-dark-blue;
+
+    img {
+        filter: brightness(0) invert(1);
+    }
+
+    .footer-item-links {
+        justify-content: space-between;
+
+        ul {
+            margin-top: 30px;
+            line-height: 2.5;
+
+            li {
+                color: #ffffff;
+            }
+
+            .contact-item>img {
+                margin-right: 10px;
+            }
+
+            .social-item {
+                display: inline-block;
+                border-radius: 60px;
+                box-shadow: 0px 0px 2px #ffffff;
+                padding: 0.5em 0.6em;
+                margin: 5px;
+
+                a {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    h1, h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .logo {
+        width: 25%;
+    }
+
+    .row {
+        display: block;
+        display: flex;
+        flex-direction: column;
+
+        .main-text {
+            order: 2;
+            width: 100%;
+            text-align: center;
+        }
+
+        .main-img {
+            order: 1;
+            width: 100%;
+        }
+
+        button, .email-1 {
+            width: 100%;
+            padding: 15px 5px;
+        }
+
+        .text-illustrator {
+            order: 2;
+            width: 100%;
+
+            h2 {
+                text-align: center;
+                font-size: 1.2rem;
+            }
+
+            .testemonials {
+                margin-top: 50px;
+            }
+        }
+
+        .img-illustrator {
+            order: 1;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .first-footer {
+        text-align: center;
+        margin: 0 auto;
+    
+        .register-text {
+            width: 100%;
+            line-height: 1.5;
+            p {
+                color: #ffffff;
+                width: 100%;
+            }
+        }
+    
+        .register {
+            width: 100%;
+    
+            .email-2, .btn-2 {
+                width: 100%;
+                padding: 15px 5px;
+            }
+    
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
